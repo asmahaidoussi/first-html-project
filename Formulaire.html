@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Premier Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- titre -->
+
+<h1>Votre Avis Nous Intéresse</h1>
+
+
+    <!-- titre -->
+
+
+<!-- red line  -->
+
+<div class="red"></div>
+
+
+<!-- red line  -->
+
+<!--  first-container -->
+
+<div class="first-container">
+
+<!-- debut du div  des informations personells  -->
+<div class="info-perso">
+
+    <fieldset>
+        <legend class="legend">Information Personnelle</legend>
+        <table >
+
+            <tr>
+
+              <td>
+                  <ol>
+
+                    <!-- nom -->
+                <li>Nom  <input type="text" name="Nom" value="" required="" /></li>
+                    <!-- nom -->
+
+
+                    <!-- date de naissance -->
+                <li>Date de naissance  <input name="Date de naissance" type="date" value="" required=""  /></li>
+                     <!-- date de naissance -->
+
+                    <!-- site -->
+                <li>Site <input type="text" name="salaire" id="salaire" placeholder="https://monsite.com" value="" required="" /></li>
+                    <!-- site  -->
+
+                          <!-- Emploi   -->
+                <li>
+
+
+                    <label for="Emploi">Emploi</label>
+
+                    <select id="Emploi" name="Emploi"required="">
+                      <option value =""></option>
+                      <option value="Etudiant">Etudiant</option>
+                      <option value="Administrateur Réseau">Administrateur Réseau</option>
+                      <option value="Développeur-web">Développeur web</option>
+                      <option value="Web designer">Web designer</option>
+                      <option value="DevOps”">DevOps”</option>
+                    </select></li>
+                        <!-- Emploi -->
+
+
+                <!-- aproax -->
+
+                <li>    Aprox. salaire Annuel
+
+                    <input type="number" id="number" step="1000" min="0"placeholder="$" value="" required="" />
+
+
+                </li>
+                <!-- aproax -->
+
+
+
+                </ol>
+
+            </td>
+
+            </tr>
+
+
+          </table>
+
+
+
+
+    </fieldset>
+</div>
+<!--  fin  du div des informations personells  -->
+
+
+
+<!-- debut du div  des informations de contact -->
+
+
+    <div class="info-contact">
+
+
+        <fieldset>
+            <legend class="legend">Information de contact</legend>
+            <table >
+
+                <tr>
+                  <td>
+
+                    <ol>
+                        <!-- Adresse Line 1 -->
+                    <li>Adresse Line 1
+                    <input type="address" name="Adresse Line 1" id="Adresse Line 1" value="" required="" />
+                    </li>
+
+                        <!-- Adresse Line 1 -->
+
+
+
+                         <!-- Adresse Line 2 -->
+                    <li>Adresse Line 2
+                        <input type="address" name="Adresse Line 2" id="Adresse Line 2" value="" required="" />
+                    </li>
+
+                         <!-- Adresse Line 2 -->
+
+
+                    <!-- pays -->
+
+                    <li>
+                      <label for="pays">
+                      Pays </label>
+                      <select name="pays" id="pays" required=""><option value ="">
+                       </option>
+                       <option value ="Algérie"> Algérie </option>
+                      <option value="Tunisie"> Tunisie </option>
+                      <option value ="Maroc"> Maroc </option>
+                      <option value ="Sahara occidentale">Sahara occidentale </option>
+                      <option value ="Libye">Libye</option>
+                      <option value ="Mauritanie">Mauritanie</option>
+                      </select>
+                    </li>
+                     <!-- pays -->
+
+
+
+                      <!-- Tel -->
+                    <li>Tel
+                    <input type="tel" name="Tel" oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')" placeholder="eg: +213 67..."/>
+                    <!-- oniput blocker utilisateur d'entrer text caractere  -->
+                    </li>
+                     <!-- Tel -->
+
+
+
+                       <!-- Courriel -->
+                    <li>Courriel
+                    <input type="email" name="Courriel" id="Courriel" required=""/></li>
+                    <!-- Courriel -->
+
+                  </td>
+
+                </tr>
+
+
+              </table>
+
+
+
+        </fieldset>
+
+
+    </div>
+    <!-- fin du div  des informations de contact -->
+
+
+
+
+</div>
+<!-- end first-container -->
+
+<!-- seconde-container -->
+<div class="seconde-container">
+
+    <!-- div Préférences -->
+
+ <div class="Préférences">
+
+      <!-- titre  -->
+
+    <h2>Préférences </h2>
+     <!-- titre  -->
+
+     <!-- red line  -->
+     <div class="red"></div>
+     <!-- red line  -->
+
+         <!-- paragraphe   -->
+    <p>Choisir une couleur <input type="color" required="" /></p><br>
+     <!-- paragraphe   -->
+
+      <!-- paragraphe   -->
+
+    <p> Sur une échelle de 1 à 10, quel est votre degré d'enthousiasme pour HTML5? <br>
+      <input min="1" max="10" step="1" type="range" required="" oninput="myFunction(this.value)"/></p>
+
+     <!-- paragraphe   -->
+
+      <!-- range   -->
+      <div class="container2">
+
+
+          <!-- range output -->
+        <p id="demo">0</p>
+        <!-- range output -->
+
+
+        <!-- range   -->
+
+
+    <!-- submit-btn   -->
+
+
+    <input  class="center" type="submit" value="Envoyer" onclick="alert('Hello User');">
+
+     <!-- submit-btn   -->
+
+      </div>
+
+
+
+
+
+
+
+ </div>
+ <!-- end div Préférences -->
+
+
+</div>
+<!-- seconde-container -->
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

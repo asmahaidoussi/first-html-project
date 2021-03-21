@@ -1,0 +1,83 @@
+body{
+    font-family: Helvetica;
+    
+}
+input,select{
+    padding: 4px;
+    margin: 5px;
+}
+
+
+
+/* first-container */
+.red{
+    height: 4px;
+    width: 100px;
+    background-color: blue;
+    margin: 0 auto;
+}
+
+.first-container{
+    display: flex;
+    width: 90%;
+    padding: 10px;
+    height: 280px;
+    margin: 0 auto;
+    
+    
+}
+.info-contact,.info-perso{
+    
+    width: 50%;
+    
+}
+
+
+
+li {
+    margin:10px;
+}
+.legend ,h1,h2{
+    text-align: center;
+}
+fieldset{
+    background-color: #E0E3E4;
+    height: 100%;
+}
+
+
+
+/* first-container */
+
+
+
+/* second-container */
+
+p{
+    text-align: center;
+}
+
+.container2{
+    margin: 0 auto;
+    width: fit-content;
+}
+.center{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    font-size: large;
+}
+.center:hover{
+    background-color:blue;
+    color: #E0E3E4 ;
+}
+#demo{
+    background-color: green;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+    font-size: 2rem;
+}
+
+
+/* second-container */
